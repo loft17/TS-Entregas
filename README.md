@@ -51,7 +51,6 @@ Si el repositorio tiene GitHub Pages activado, la calculadora se abre directamen
 - **Los estilos o el Excel no cargan:** la calculadora necesita conexión a internet para cargar la librería que lee el Excel.
 - **Mac o Windows bloquean el archivo:** si el navegador avisa de un archivo descargado, confirma que lo abres tú a propósito.
 
-![Pantalla inicial, antes de subir el Excel](images/captura_inicio.png)
 
 ## Privacidad
 
