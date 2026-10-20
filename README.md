@@ -27,7 +27,7 @@ No hace falta instalar nada ni saber programar. Hay dos formas:
 ### Opción B: con Git (para quien ya lo usa)
 
 ```bash
-git clone [https://github.com/USUARIO/REPOSITORIO.git](https://github.com/loft17/TS-Entregas.git)
+git clone https://github.com/loft17/TS-Entregas.git
 ```
 
 Después abre `index.html` en el navegador.
