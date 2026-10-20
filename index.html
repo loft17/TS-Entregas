@@ -6,7 +6,7 @@
 <title>Calculadora de Entregas TS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Toyota+Type:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --toyota-red: #eb0a1e;
@@ -60,7 +60,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* Header Superior Toyota Style */
   .brand-header {
     background: var(--toyota-black);
     color: #fff;
@@ -69,6 +68,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
   }
 
   .brand-logo {
@@ -89,18 +89,16 @@
     padding: 3px 8px;
     border-radius: 2px;
     letter-spacing: 1.5px;
+    white-space: nowrap;
   }
 
-  /* Wrapper */
   .wrap {
     max-width: 680px;
     margin: 32px auto;
     padding: 0 16px;
   }
 
-  .hero-title {
-    margin-bottom: 24px;
-  }
+  .hero-title { margin-bottom: 24px; }
 
   h1 {
     font-size: 1.8rem;
@@ -117,7 +115,6 @@
     font-weight: 400;
   }
 
-  /* Tarjetas / Módulos */
   .card {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -141,9 +138,7 @@
   }
 
   .card:focus-within::before,
-  .card:hover::before {
-    background: var(--toyota-red);
-  }
+  .card:hover::before { background: var(--toyota-red); }
 
   h2 {
     font-size: 1.1rem;
@@ -156,14 +151,8 @@
     gap: 8px;
   }
 
-  /* Form / Inputs */
-  .form-group {
-    margin-bottom: 16px;
-  }
-
-  .form-group:last-child {
-    margin-bottom: 0;
-  }
+  .form-group { margin-bottom: 16px; }
+  .form-group:last-child { margin-bottom: 0; }
 
   label {
     display: block;
@@ -193,7 +182,6 @@
     background: var(--card-bg);
   }
 
-  /* Custom File Input */
   .file-dropzone {
     border: 2px dashed var(--border-color);
     border-radius: var(--radius-sm);
@@ -222,11 +210,8 @@
     color: var(--text-muted);
   }
 
-  .file-dropzone-text b {
-    color: var(--toyota-red);
-  }
+  .file-dropzone-text b { color: var(--toyota-red); }
 
-  /* Estados / Textos */
   .note {
     color: var(--text-muted);
     font-size: 0.85rem;
@@ -242,10 +227,7 @@
     gap: 6px;
   }
 
-  .err-msg {
-    color: var(--toyota-red);
-    font-weight: 600;
-  }
+  .err-msg { color: var(--toyota-red); font-weight: 600; }
 
   .big {
     font-size: 1.3rem;
@@ -254,7 +236,6 @@
     line-height: 1.3;
   }
 
-  /* Barra de Progreso */
   .bar {
     height: 8px;
     background: var(--toyota-mid-grey);
@@ -271,7 +252,6 @@
     transition: width 0.4s ease;
   }
 
-  /* Stats Grid */
   .stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -296,17 +276,9 @@
     margin-bottom: 4px;
   }
 
-  .stat b {
-    display: block;
-    font-size: 1.15rem;
-    font-weight: 700;
-  }
+  .stat b { display: block; font-size: 1.15rem; font-weight: 700; }
 
-  /* Tabla de hitos */
-  .table-container {
-    margin-top: 20px;
-    overflow-x: auto;
-  }
+  .table-container { margin-top: 20px; overflow-x: auto; }
 
   table {
     width: 100%;
@@ -332,10 +304,9 @@
     vertical-align: middle;
   }
 
-  td.num {
-    font-weight: 600;
-    white-space: nowrap;
-  }
+  td.num { font-weight: 600; white-space: nowrap; }
+
+  td small { color: var(--text-muted); font-size: 0.8rem; }
 
   .tag {
     font-size: 0.75rem;
@@ -345,16 +316,17 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     display: inline-block;
+    white-space: nowrap;
   }
 
-  .tag.ok {
-    background: rgba(0, 138, 0, 0.1);
-    color: var(--ok-color);
-  }
+  .tag.ok { background: rgba(0, 138, 0, 0.1); color: var(--ok-color); }
+  .tag.wait { background: rgba(217, 119, 6, 0.1); color: var(--wait-color); }
 
-  .tag.wait {
-    background: rgba(217, 119, 6, 0.1);
-    color: var(--wait-color);
+  .footer {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0 16px 32px;
   }
 
   .hidden { display: none !important; }
@@ -366,20 +338,20 @@
   <div class="brand-logo">
     <span>Calculadora de Entregas</span>
   </div>
-  <span class="brand-badge">TS LOGISTICS</span>
+  <span class="brand-badge">NO OFICIAL</span>
 </header>
 
 <div class="wrap">
   <div class="hero-title">
     <h1>Seguimiento de Pedidos</h1>
-    <p class="sub">Sube el histórico de seguimiento para estimar de forma precisa los tiempos y fecha de entrega de tu vehículo.</p>
+    <p class="sub">Sube el histórico de seguimiento para estimar los tiempos y la fecha de entrega de tu vehículo.</p>
   </div>
 
   <!-- Paso 1 -->
   <div class="card">
-    <h2>1. Cargar Datos de Seguimiento</h2>
+    <h2>1. Cargar datos de seguimiento</h2>
     <div class="form-group">
-      <label>Archivo .xlsx (Exportado de Google Sheets)</label>
+      <label>Archivo .xlsx (exportado de Google Sheets)</label>
       <div class="file-dropzone">
         <input type="file" id="archivo" accept=".xlsx,.xlsm">
         <div class="file-dropzone-text">
@@ -392,38 +364,38 @@
 
   <!-- Paso 2 -->
   <div class="card hidden" id="cardFecha">
-    <h2>2. Configuración de Tu Pedido</h2>
+    <h2>2. Configuración de tu pedido</h2>
     <div class="form-group">
-      <label for="fecha">Fecha del Pedido</label>
+      <label for="fecha">Fecha del pedido (columna DÍA)</label>
       <input type="date" id="fecha">
     </div>
     <div class="form-group">
-      <label for="modo">Base para el Cálculo de Medias</label>
+      <label for="modo">Base para el cálculo de medias</label>
       <select id="modo">
-        <option value="todos">Todos los pedidos entregados (Histórico completo)</option>
-        <option value="reciente">Solo últimos 12 meses (Tendencia reciente)</option>
+        <option value="todos">Todos los pedidos entregados (histórico completo)</option>
+        <option value="reciente">Solo últimos 12 meses (tendencia reciente)</option>
       </select>
     </div>
   </div>
 
-  <!-- Estado y Resultados -->
+  <!-- Estado y resultados -->
   <div class="card hidden" id="resultado">
-    <h2>Estado de la Entrega</h2>
+    <h2>Estado de la entrega</h2>
     <div class="big" id="estadoGeneral"></div>
     <div class="bar"><span id="barra"></span></div>
     <div class="note" id="progreso"></div>
 
     <div class="stats">
       <div class="stat">
-        <span>Entrega Estimada</span>
+        <span>Entrega estimada</span>
         <b id="sEnt"></b>
       </div>
       <div class="stat">
-        <span>Rango Probable</span>
+        <span>Rango probable</span>
         <b id="sRango"></b>
       </div>
       <div class="stat">
-        <span>Días Restantes</span>
+        <span>Días restantes</span>
         <b id="sFalta"></b>
       </div>
     </div>
@@ -432,24 +404,28 @@
       <table>
         <thead>
           <tr>
-            <th>Hito del Proceso</th>
+            <th>Fase</th>
             <th>Estimación</th>
-            <th>Estado Actual</th>
+            <th>Estado</th>
           </tr>
         </thead>
         <tbody id="hitos"></tbody>
       </table>
     </div>
+    <div class="note" id="previsionToyota"></div>
   </div>
 
-  <!-- Detalle Base de Cálculo -->
+  <!-- Base de cálculo -->
   <div class="card hidden" id="cardBase">
-    <h2>Base de Cálculo Utilizada</h2>
+    <h2>Base de cálculo</h2>
     <div class="note" id="baseTexto"></div>
   </div>
+
 </div>
 
-<!-- SheetJS -->
+<div class="footer">Herramienta no oficial, sin relación con Toyota. Las fechas son estimaciones basadas en pedidos anteriores.</div>
+
+<!-- SheetJS: lee el .xlsx dentro del navegador. No se envía nada a ningún servidor. -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script>
   // ============================================================
@@ -461,6 +437,7 @@
 
   const norm = s => String(s == null ? "" : s).normalize("NFD").replace(/[̀-ͯ]/g, "").trim().toUpperCase();
 
+  // Número de serie de Excel -> "AAAA-MM-DD". Si no es una fecha, null.
   function serieAISO(v) {
     if (typeof v !== "number" || v < 40000 || v > 60000) return null;
     return new Date(Math.round((v - 25569) * DIA_MS)).toISOString().slice(0, 10);
@@ -474,6 +451,7 @@
     return new Date(Date.parse(iso) + n * DIA_MS).toISOString().slice(0, 10);
   }
 
+  // Lee todas las pestañas de trimestre y devuelve los pedidos ya entregados
   function extraerPedidos(libro) {
     const pedidos = [], rechazados = [], pestanas = new Set();
     for (const nombre of libro.SheetNames) {
@@ -481,6 +459,7 @@
       const ws = libro.Sheets[nombre];
       const filas = XLSX.utils.sheet_to_json(ws, { header: 1, raw: true, defval: null });
 
+      // Fila de cabecera: la que tiene USUARIO y ENTREGA
       let hr = -1;
       for (let i = 0; i < Math.min(filas.length, 40); i++) {
         const cab = (filas[i] || []).map(norm);
@@ -488,13 +467,17 @@
       }
       if (hr < 0) continue;
 
+      // Columnas por nombre de cabecera (cada pestaña tiene un orden distinto)
       const cab = (filas[hr] || []).map(norm);
       const col = {};
       cab.forEach((c, idx) => {
         if (c.startsWith("DIA") && col.dia == null) col.dia = idx;
         else if (c.startsWith("USUARIO") && col.user == null) col.user = idx;
+        else if (c.startsWith("PREV") && col.prev == null) col.prev = idx;
         else if (c.startsWith("FACTORY") && col.fab == null) col.fab = idx;
+        else if (c.startsWith("BRISTOL") && col.bri == null) col.bri = idx;
         else if (c.startsWith("SAGUNTO") && col.sag == null) col.sag = idx;
+        else if (c.startsWith("CONCE") && col.conc == null) col.conc = idx;
         else if (c.startsWith("ENTREG") && col.ent == null) col.ent = idx;
       });
       if (col.dia == null || col.ent == null || col.user == null) continue;
@@ -509,14 +492,16 @@
         const dias = diasEntreISO(p, e);
         if (dias < MIN_DIAS || dias > MAX_DIAS) { rechazados.push({ hoja: nombre, fila: i + 1, dias }); continue; }
 
-        const fab = serieAISO(f[col.fab]);
-        const sag = serieAISO(f[col.sag]);
+        // Cada fase se guarda solo si cae entre el pedido y la entrega
+        const dentro = iso => (iso && iso >= p && iso <= e) ? iso : null;
         pedidos.push({
-          t: nombre,
           p,
-          fab: fab && fab >= p && fab <= e ? fab : null,
-          sag: sag && sag >= p && sag <= e ? sag : null,
-          ent: e
+          prev: serieAISO(f[col.prev]),          // PREV. ENTR. (previsión de Toyota)
+          fab: dentro(serieAISO(f[col.fab])),    // FACTORY
+          bri: dentro(serieAISO(f[col.bri])),    // BRISTOL
+          sag: dentro(serieAISO(f[col.sag])),    // SAGUNTO
+          conc: dentro(serieAISO(f[col.conc])),  // CONCE.
+          ent: e                                 // ENTREGA
         });
         pestanas.add(nombre);
       }
@@ -526,35 +511,44 @@
 
   const media = arr => arr.reduce((a, b) => a + b, 0) / arr.length;
   const mediana = arr => {
+    if (!arr.length) return null;
     const s = [...arr].sort((a, b) => a - b), m = Math.floor(s.length / 2);
     return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
   };
 
   function calcStats(lista) {
-    const dFab = lista.filter(x => x.fab).map(x => diasEntreISO(x.p, x.fab));
-    const dSag = lista.filter(x => x.sag).map(x => diasEntreISO(x.p, x.sag));
+    const dias = campo => lista.filter(x => x[campo]).map(x => diasEntreISO(x.p, x[campo]));
     const dEnt = lista.map(x => diasEntreISO(x.p, x.ent));
+    // Diferencia entre la entrega real y la previsión de Toyota (negativo = llegó antes)
+    const dPrev = lista.filter(x => x.prev).map(x => diasEntreISO(x.prev, x.ent));
     return {
-      fab: Math.round(mediana(dFab)),
-      sag: Math.round(mediana(dSag)),
+      fab: Math.round(mediana(dias("fab"))),
+      bri: Math.round(mediana(dias("bri"))),
+      sag: Math.round(mediana(dias("sag"))),
+      conc: Math.round(mediana(dias("conc"))),
       ent: Math.round(media(dEnt)),
       min: Math.min(...dEnt),
       max: Math.max(...dEnt),
+      prevMed: dPrev.length ? Math.round(mediana(dPrev)) : null,
       n: dEnt.length,
-      nFab: dFab.length,
-      nSag: dSag.length
+      nFab: dias("fab").length,
+      nBri: dias("bri").length,
+      nSag: dias("sag").length,
+      nConc: dias("conc").length,
+      nPrev: dPrev.length
     };
-  }
-
-  function corteReciente() {
-    const d = new Date();
-    d.setFullYear(d.getFullYear() - 1);
-    return isoLocal(d);
   }
 
   function isoLocal(d) {
     const pad = n => String(n).padStart(2, "0");
     return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
+  }
+
+  // "Últimos 12 meses" calculado desde hoy, no una fecha fija
+  function corteReciente() {
+    const d = new Date();
+    d.setFullYear(d.getFullYear() - 1);
+    return isoLocal(d);
   }
 
   // ============================================================
@@ -580,13 +574,18 @@
 
   function pintarBase() {
     if (!D) return;
-    const quien = D.modo === "reciente" ? "pedidos de los últimos 12 meses" : "todos los pedidos entregados del Excel";
+    const quien = D.modo === "reciente" ? "pedidos de los últimos 12 meses" : "pedidos entregados del Excel";
+    const prevTxt = D.prevMed === null ? "sin datos" :
+      (D.prevMed < 0 ? "llegan de media " + Math.abs(D.prevMed) + " días antes" :
+       D.prevMed > 0 ? "llegan de media " + D.prevMed + " días después" : "llegan el mismo día");
     $("baseTexto").innerHTML =
       "Calculado con <b>" + D.n + "</b> " + quien + " (" + INFO.pestanas + " pestañas leídas).<br>" +
-      "• Mediana hasta fábrica: <b>" + D.fab + " días</b> (" + D.nFab + " datos)<br>" +
-      "• Mediana hasta Sagunto: <b>" + D.sag + " días</b> (" + D.nSag + " datos)<br>" +
-      "• Media hasta entrega: <b>" + D.ent + " días</b> (rango " + D.min + "–" + D.max + ").<br>" +
-      "<small>* Tiempos de carácter estimativo según el histórico cargado.</small>";
+      "• Fábrica: <b>" + D.fab + " días</b> desde el pedido (" + D.nFab + " datos)<br>" +
+      "• Bristol: <b>" + D.bri + " días</b> (" + D.nBri + " datos)<br>" +
+      "• Sagunto: <b>" + D.sag + " días</b> (" + D.nSag + " datos)<br>" +
+      "• Concesionario: <b>" + D.conc + " días</b> (" + D.nConc + " datos)<br>" +
+      "• Entrega: <b>" + D.ent + " días</b> de media (rango " + D.min + "–" + D.max + ")<br>" +
+      "<small>* Son estimaciones según el histórico cargado, no fechas oficiales.</small>";
     $("cardBase").classList.remove("hidden");
   }
 
@@ -596,16 +595,20 @@
     const hoy = isoLocal(new Date());
     const transcurridos = diasEntreISO(base, hoy);
 
-    const fFab = sumarISO(base, D.fab), fSag = sumarISO(base, D.sag), fEnt = sumarISO(base, D.ent);
+    const fFab = sumarISO(base, D.fab), fBri = sumarISO(base, D.bri), fSag = sumarISO(base, D.sag),
+          fConc = sumarISO(base, D.conc), fEnt = sumarISO(base, D.ent);
     const fMin = sumarISO(base, D.min), fMax = sumarISO(base, D.max);
     const faltan = diasEntreISO(hoy, fEnt);
 
+    // Fase actual según las fechas estimadas
     let estado;
     if (transcurridos < 0) estado = "El pedido es futuro.";
-    else if (hoy >= fEnt) estado = "Entregado (según las estimaciones ya deberías tener el vehículo o estar muy cerca).";
-    else if (hoy >= fSag) estado = "En Sagunto o en concesionario (fase final previa a la entrega).";
-    else if (hoy >= fFab) estado = "En tránsito: ha completado la fabricación y se dirige a Sagunto.";
-    else estado = "Pedido en proceso: en preparación previa a salida de fábrica.";
+    else if (hoy >= fEnt) estado = "Entregado: según las estimaciones ya deberías tener el coche o estar muy cerca.";
+    else if (hoy >= fConc) estado = "En el concesionario, a la espera de que lo preparen.";
+    else if (hoy >= fSag) estado = "En el puerto de Valencia (Sagunto), a la espera de salir al concesionario.";
+    else if (hoy >= fBri) estado = "En tránsito: salió de fábrica y va en barco o espera subirse a uno hacia Sagunto.";
+    else if (hoy >= fFab) estado = "En fábrica: el coche se está fabricando.";
+    else estado = "Pedido en proceso: aún no ha entrado en fábrica.";
 
     $("estadoGeneral").textContent = estado;
     $("barra").style.width = Math.max(0, Math.min(100, (transcurridos / D.ent) * 100)) + "%";
@@ -613,10 +616,20 @@
     $("sEnt").textContent = txt(fEnt);
     $("sRango").textContent = txt(fMin) + " – " + txt(fMax);
     $("sFalta").textContent = faltan >= 0 ? faltan + " días" : "Completado";
+
+    const fila = (nombre, fecha, extra) =>
+      '<tr><td>' + nombre + '</td><td class="num">' + txt(fecha) + '</td><td>' + estadoHito(fecha, hoy) + (extra || "") + '</td></tr>';
     $("hitos").innerHTML =
-      '<tr><td>Fábrica</td><td class="num">' + txt(fFab) + '</td><td>' + estadoHito(fFab, hoy) + '</td></tr>' +
-      '<tr><td>Sagunto</td><td class="num">' + txt(fSag) + '</td><td>' + estadoHito(fSag, hoy) + '</td></tr>' +
-      '<tr><td><b>Entrega Final</b></td><td class="num"><b>' + txt(fEnt) + '</b></td><td>' + estadoHito(fEnt, hoy) + '</td></tr>';
+      '<tr><td>Pedido</td><td class="num">' + txt(base) + '</td><td><span class="tag ok">✔ Realizado</span></td></tr>' +
+      fila("Fábrica", fFab) +
+      fila("Bristol (barco)", fBri) +
+      fila("Sagunto (puerto)", fSag) +
+      fila("Concesionario", fConc) +
+      fila("<b>Entrega</b>", fEnt);
+
+    $("previsionToyota").innerHTML = D.prevMed === null ? "" :
+      "En pedidos anteriores, la entrega real fue de media " + Math.abs(D.prevMed) +
+      " días " + (D.prevMed <= 0 ? "antes" : "después") + " de la previsión de Toyota (PREV. ENTR.).";
     $("resultado").classList.remove("hidden");
   }
 
@@ -629,7 +642,7 @@
         PEDIDOS = INFO.pedidos;
         INFO.pestanas = INFO.pestanas.length;
         if (PEDIDOS.length === 0) throw new Error("No encontré pedidos entregados en el archivo.");
-        $("cargaMsg").innerHTML = '<span class="ok-msg">✔ ' + PEDIDOS.length + ' pedidos procesados correctamente (' + INFO.pestanas + ' pestañas).</span>';
+        $("cargaMsg").innerHTML = '<span class="ok-msg">✔ ' + PEDIDOS.length + ' pedidos procesados (' + INFO.pestanas + ' pestañas).</span>';
         $("cardFecha").classList.remove("hidden");
         usarModo($("modo").value);
         calcular();
