@@ -22,7 +22,7 @@ No hace falta instalar nada ni saber programar. Hay dos formas:
 1. Entra en el repositorio de GitHub: **https://github.com/loft17/TS-Entregas**.
 2. Pulsa el botón verde **Code** y después **Download ZIP**.
 3. Se descargará un archivo `TS-Entregas-main.zip`. Haz doble clic para descomprimirlo (en Windows: clic derecho › **Extraer todo**; en Mac, se descomprime solo).
-4. Dentro de la carpeta encontrarás `index.html`. Haz doble clic: se abrirá en tu navegador.
+4. Dentro de la carpeta encontrarás `calculadora_entregas.html`. Haz doble clic: se abrirá en tu navegador.
 
 ### Opción B: con Git (para quien ya lo usa)
 
@@ -30,7 +30,7 @@ No hace falta instalar nada ni saber programar. Hay dos formas:
 git clone https://github.com/loft17/TS-Entregas.git
 ```
 
-Después abre `index.html` en el navegador.
+Después abre `calculadora_entregas.html` en el navegador.
 
 ### Opción C: sin descargar nada (si está publicada con GitHub Pages)
 
@@ -38,8 +38,8 @@ Si el repositorio tiene GitHub Pages activado, la calculadora se abre directamen
 
 ## Cómo se usa
 
-1. Descarga la hoja de seguimiento en Excel: en Google Sheets, **Archivo › Descargar › Microsoft Excel (.xlsx)**.
-2. Abre `index.html` en el navegador (ver sección anterior).
+1. Descarga el Excel de seguimiento de pedidos desde el foro de Club Toyota Corolla (ver [Créditos](#créditos)). Son los únicos archivos compatibles con la calculadora.
+2. Abre `calculadora_entregas.html` en el navegador (ver sección anterior).
 3. Sube el `.xlsx` en el paso 1.
 4. Elige la fecha de tu pedido en el paso 2.
 
@@ -70,6 +70,15 @@ Si el repositorio tiene GitHub Pages activado, la calculadora se abre directamen
 
 - Un navegador moderno con conexión a internet (para cargar la librería que lee el Excel desde cdnjs).
 
+## Créditos
+
+Los datos de seguimiento de pedidos son de la comunidad del foro **[Club Toyota Corolla](https://www.clubtoyotacorolla.com/)**. Gracias a quienes mantienen los Excel.
+
+Los archivos que usa la calculadora están en estos hilos del foro:
+
+- [Corolla HB: seguimiento de pedidos](https://www.clubtoyotacorolla.com/threads/corolla-hb-seguimiento-de-pedidos.8271/)
+- [Corolla TS: seguimiento de pedidos](https://www.clubtoyotacorolla.com/threads/corolla-ts-seguimiento-de-pedidos.8272/)
+
 ## Aviso
 
-Herramienta no oficial, sin relación con Toyota.
+Herramienta no oficial, sin relación con Toyota ni con el Club Toyota Corolla.
