@@ -34,7 +34,7 @@ Después abre `index.html` en el navegador.
 
 ### Opción C: sin descargar nada (si está publicada con GitHub Pages)
 
-Si el repositorio tiene GitHub Pages activado, la calculadora se abre directamente desde un enlace: **https://loft17.github.io/TS-Entregas/** *(sustituir por la dirección real)*.
+Si el repositorio tiene GitHub Pages activado, la calculadora se abre directamente desde un enlace: **https://loft17.github.io/TS-Entregas/**.
 
 ## Cómo se usa
 
